@@ -1,0 +1,8 @@
+.DS_Store
+
+# Local configuration and private keys must never be published.
+.env
+.env.*
+!.env.example
+*.key
+*.pem

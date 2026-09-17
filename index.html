@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'; script-src 'self'; style-src 'self'; font-src 'self'; img-src 'self' https://cdn.discordapp.com; connect-src 'self' https://discord.com">
+  <meta name="referrer" content="no-referrer">
+  <meta name="theme-color" content="#292239">
+  <meta name="description" content="Corporate, guilde francophone World of Warcraft. Des raids le mercredi et le dimanche, des boss à tomber et des bons moments ensemble. Rejoignez-nous !">
+  <meta property="og:title" content="Corporate — Des boss, des objectifs, une équipe.">
+  <meta property="og:description" content="Une guilde WoW, du PvE et de la bonne humeur. Découvrez nos raids, nos règles de loot et notre bande de joueurs.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <title>Corporate</title>
+  <link rel="icon" href="assets/art/guild-logo.png" type="image/png">
+  <link rel="preload" href="assets/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skip">Aller au contenu</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#accueil" aria-label="Corporate, accueil" data-i18n-aria="brandLabel"><img src="assets/art/guild-logo.png" width="44" height="44" alt=""><span>Corporate</span></a>
+      <nav class="desktop-nav" aria-label="Navigation principale" data-i18n-aria="navigationLabel">
+        <a href="#guilde" data-i18n="navGuild">La guilde</a><a href="#raids" data-i18n="navRaids">Les raids</a><a href="#butin" data-i18n="navLoot">Le loot</a><a href="#communaute" data-i18n="navCommunity">La bande</a>
+      </nav>
+      <div class="header-actions">
+        <div class="language-switch" role="group" aria-label="Langue du site" data-i18n-aria="languageLabel" hidden><button type="button" data-language="fr" aria-pressed="true" aria-label="Français" lang="fr">FR</button><button type="button" data-language="en" aria-pressed="false" aria-label="English" lang="en">EN</button></div>
+        <a class="button button-discord button-header" href="https://discord.gg/fHhJxuQCfZ" target="_blank" rel="noopener noreferrer"><img class="discord-icon" src="assets/brands/discord-white.svg" width="24" height="18" alt=""><span>Discord</span></a>
+        <button class="menu-toggle" type="button" aria-controls="mobile-nav" aria-expanded="false" aria-label="Ouvrir le menu" data-i18n-aria="menuOpen" hidden><span></span><span></span></button>
+      </div>
+    </div>
+    <nav id="mobile-nav" class="mobile-nav" aria-label="Navigation mobile" data-i18n-aria="mobileNavigationLabel" hidden><a href="#guilde" data-i18n="navGuild">La guilde</a><a href="#raids" data-i18n="navRaids">Les raids</a><a href="#butin" data-i18n="navLoot">Le loot</a><a href="#communaute" data-i18n="navCommunity">La bande</a><a href="https://discord.gg/fHhJxuQCfZ" target="_blank" rel="noopener noreferrer" data-i18n="joinDiscord">Rejoindre le Discord</a></nav>
+  </header>
+
+  <main id="main">
+    <section id="accueil" class="hero" aria-labelledby="hero-title">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="game-label"><span aria-hidden="true">⚔️</span> <span data-i18n="heroTag">Guilde francophone · World of Warcraft</span></p>
+          <h1 id="hero-title"><span data-i18n="heroTitle1">Des boss.</span><br><span data-i18n="heroTitle2">Des objectifs.</span><br><span data-i18n="heroTitle3">Une équipe.</span></h1>
+          <p class="hero-description" data-i18n="heroDescription">Bienvenue chez Corporate ! Notre core business : tomber des boss dans la bonne humeur. On s’entraide, on progresse et on garde le plaisir de jouer en équipe. 🍻</p>
+          <div class="hero-actions"><a class="button button-gold" href="https://discord.gg/fHhJxuQCfZ" target="_blank" rel="noopener noreferrer"><img class="discord-icon" src="assets/brands/discord-black.svg" width="24" height="18" alt=""><span data-i18n="joinDiscord">Rejoindre le Discord</span></a><a class="hero-link" href="#raids"><span data-i18n="discover">C’est quand le prochain raid ?</span><span aria-hidden="true">↓</span></a></div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="art-spark spark-one">✨</div><div class="art-spark spark-two">🍻</div>
+          <div class="tavern-photo"><img src="assets/art/tavern.png" width="372" height="373" alt="" fetchpriority="high"><span data-i18n="photoCaption">Le vrai loot, c’est la guilde.</span></div>
+        </div>
+      </div>
+      <div class="container hero-facts"><span><span aria-hidden="true">⚔️</span> <span data-i18n="factFocus">PvE & progression HL</span></span><span><span aria-hidden="true">📅</span> <span data-i18n="factDays">Mercredi & dimanche</span></span><span><span aria-hidden="true">🌙</span> <span data-i18n="factHours">21 h → minuit</span></span></div>
+    </section>
+
+    <section id="guilde" class="section guild-section" aria-labelledby="guild-title">
+      <div class="container">
+        <div class="section-heading"><h2 id="guild-title" data-i18n="guildTitle">🎮 On est là pour jouer ensemble.</h2><p data-i18n="guildIntro">Des joueurs de tous niveaux, une même culture d’équipe : progresser sans oublier de s’amuser.</p></div>
+        <div class="values-grid">
+          <article class="value"><img src="assets/art/ragnaros.png" width="729" height="460" alt="" loading="lazy"><div><h3 data-i18n="valueProgressTitle">⚔️ Tomber des boss</h3><p data-i18n="valueProgressText">On prépare les raids, on apprend de nos wipes et on savoure les victoires. Notre meilleur KPI ? Un boss à terre et un vocal qui rigole.</p></div></article>
+          <article class="value"><img src="assets/art/crafting.png" width="452" height="284" alt="" loading="lazy"><div><h3 data-i18n="valueShareTitle">🧙 S’entraider</h3><p data-i18n="valueShareText">Un conseil sur ta classe, un craft ou un coup de main ? Le partage de connaissances fait partie de l’onboarding, quel que soit ton niveau.</p></div></article>
+          <article class="value"><img src="assets/art/portal.png" width="824" height="377" alt="" loading="lazy"><div><h3 data-i18n="valueTeamTitle">🌍 Partager l’aventure</h3><p data-i18n="valueTeamText">Les extensions changent, l’esprit reste : du respect, de la bonne humeur et une guilde où l’on se sent bien.</p></div></article>
+        </div>
+        <section class="journey" aria-labelledby="journey-title">
+          <h3 id="journey-title" data-i18n="journeyLabel">🧭 La roadmap de la guilde</h3>
+          <p class="journey-intro" data-i18n="journeyIntro">Née sur Season of Discovery, Corporate continue l’aventure avec la même envie de jouer ensemble.</p>
+          <ol class="journey-steps">
+            <li>
+              <div class="journey-logo"><img src="assets/logos/season-of-discovery.png" width="379" height="197" alt="" loading="lazy"></div>
+              <span class="journey-stage" data-i18n="journeySod">🌱 Création de la guilde</span>
+              <h4>Season of Discovery</h4>
+              <p data-i18n="journeySodText">Les premiers raids et les débuts de Corporate.</p>
+            </li>
+            <li>
+              <div class="journey-logo"><img src="assets/logos/mists-of-pandaria.png" width="419" height="211" alt="" loading="lazy"></div>
+              <span class="journey-stage" data-i18n="journeyMop">🐼 Nouveau chapitre</span>
+              <h4>Mists of Pandaria Classic</h4>
+              <p data-i18n="journeyMopText">La guilde prend la direction de la Pandarie.</p>
+            </li>
+            <li>
+              <div class="journey-logo"><img src="assets/logos/burning-crusade-anniversary.png" width="333" height="197" alt="" loading="lazy"></div>
+              <span class="journey-stage" data-i18n="journeyTbc">🔥 Passage en Outreterre</span>
+              <h4>The Burning Crusade Anniversary</h4>
+              <p data-i18n="journeyTbcText">L’équipe traverse à nouveau la Porte des ténèbres.</p>
+            </li>
+            <li class="journey-current">
+              <div class="journey-logo"><img src="assets/logos/wow-forever.png" width="882" height="718" alt="" loading="lazy"></div>
+              <span class="journey-stage" data-i18n="journeyForever">✨ Notre nouveau cap</span>
+              <h4>World of Warcraft: Forever</h4>
+              <p data-i18n="journeyForeverText">Aujourd’hui, on se tourne ensemble vers WoW Forever.</p>
+            </li>
+          </ol>
+        </section>
+      </div>
+    </section>
+
+    <section id="raids" class="section raid-section" aria-labelledby="raid-title">
+      <div class="container">
+        <div class="section-heading"><h2 id="raid-title" data-i18n="raidTitle">📅 On raid quand ?</h2><p data-i18n="raidIntro">Nos rendez-vous d’équipe : mercredi et dimanche, de 21 h à minuit. Viens préparé, on s’occupe des boss ensemble !</p></div>
+        <div class="raid-grid">
+          <div class="schedule-panel"><h3 data-i18n="raidNights">Le programme de la soirée</h3><p class="schedule-description" data-i18n="scheduleDescription">Deux soirs obligatoires. Des raids bonus, optionnels, peuvent s’ajouter selon les besoins.</p>
+            <ol class="schedule-timeline">
+              <li><time datetime="20:00" data-i18n="schedule20Time">20:00</time><div><h4 data-i18n="schedule20Title">On confirme !</h4><p data-i18n="schedule20Text">Les « tentatives » non mises à jour sont remplacées.</p></div></li>
+              <li><time datetime="20:30" data-i18n="schedule2030Time">20:30</time><div><h4 data-i18n="schedule2030Title">Les invitations partent</h4><p data-i18n="schedule2030Text">On rejoint le groupe et on finit de se préparer.</p></div></li>
+              <li><time datetime="20:50" data-i18n="schedule2050Time">20:50</time><div><h4 data-i18n="schedule2050Title">Dernier appel</h4><p data-i18n="schedule2050Text">Les retardataires qui n’ont pas prévenu sont remplacés.</p></div></li>
+              <li class="pull-step"><time datetime="21:00" data-i18n="schedule21Time">21:00</time><div><h4 data-i18n="schedule21Title">⚔️ C’est parti, on pull !</h4><p data-i18n="schedule21Text">Tout le monde est prêt et les SR sont remplies.</p></div></li>
+            </ol><p class="schedule-footnote" data-i18n="scheduleFootnote">Réfère-toi aux horaires des événements Raid-Helper sur Discord.</p>
+          </div>
+          <aside class="preparation-panel" aria-labelledby="preparation-title"><div class="preparation-heading"><span aria-hidden="true">🎒</span><span class="checklist-count" id="checklist-count" aria-live="polite" hidden>0 / 5</span></div><h3 id="preparation-title" data-i18n="preparationTitle">T’as rien oublié ?</h3><p data-i18n="preparationIntro">Le petit check avant de partir à l’aventure.</p>
+            <fieldset class="raid-checklist"><legend class="sr-only" data-i18n="checklistLegend">Ma préparation de raid</legend><label><input type="checkbox" name="gear"><span data-i18n="checkGear">🛡️ Un équipement adapté au raid</span></label><label><input type="checkbox" name="enchants"><span data-i18n="checkEnchants">✨ Tous les enchantements</span></label><label><input type="checkbox" name="gems"><span data-i18n="checkGems">💎 Des gemmes partout où il en faut</span></label><label><input type="checkbox" name="consumables"><span data-i18n="checkConsumables">🧪 Les consommables dans les sacs</span></label><label><input type="checkbox" name="buffs"><span><span data-i18n="checkBuffs">🌍 Les world buffs</span><small data-i18n="checkBuffsNote">Si l’on joue sur Vanilla</small></span></label></fieldset>
+            <div class="checklist-bottom" hidden><p id="checklist-status" data-i18n="checklistLocal">Checklist enregistrée sur cet appareil.</p><button id="reset-checklist" type="button" data-i18n="checklistReset">Recommencer</button></div>
+          </aside>
+        </div>
+        <div class="raid-details">
+          <article class="raid-note"><h3 data-i18n="signupTitle">📝 Inscriptions & absences</h3><div class="detail-content"><p data-i18n="signupText">Inscris-toi au plus tôt sur Raid-Helper, dans Discord. Chaque événement précise la date, le raid, la taille du groupe et la difficulté.</p><p><span data-i18n="absenceText">Un retard, une absence ou un changement de dispo ? Préviens dans</span> <span class="channel">#✈️-absences</span><span data-i18n="absenceEnd"> pour qu’on puisse s’organiser.</span></p></div></article>
+          <article class="raid-note"><h3 data-i18n="operationsTitle">🎙️ Pendant le raid</h3><div class="detail-content"><p data-i18n="operationsText">Briefing détaillé la première semaine, puis on va à l’essentiel. Pendant les tries, Syllou pilote les opérations : on suit ses décisions et on reste concentrés.</p><p data-i18n="operationsVoice">On garde le vocal calme quand c’est demandé. Les loots sont distribués à la fin du raid ou avant la fin de leur délai d’échange.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="butin" class="section loot-section" aria-labelledby="loot-title">
+      <div class="container loot-grid">
+        <div class="loot-copy"><h2 id="loot-title" data-i18n="lootTitle">🎁 Et le loot, alors ?</h2><p data-i18n="lootIntro">Le loot, c’est notre investissement collectif. Avec les soft reserves (SR), on répartit le butin équitablement pour faire avancer toute l’équipe.</p><p class="loot-deadline" data-i18n="lootDeadline">⏰ Remplis tes SR avant 21 h !</p><a class="text-link" href="https://discord.gg/fHhJxuQCfZ" target="_blank" rel="noopener noreferrer"><span data-i18n="lootAsk">Un doute ? Demande sur Discord</span><span aria-hidden="true">↗</span></a></div>
+        <div class="loot-policy"><div class="loot-highlights"><div class="loot-stat"><span aria-hidden="true">🎲</span><strong>2× SR = +25</strong><span data-i18n="lootDouble">Double réserve, bonus +25</span></div><div class="loot-stat"><span aria-hidden="true">🎲</span><strong>3× SR = +40</strong><span data-i18n="lootTriple">Triple réserve, bonus +40</span></div></div><ul class="policy-list"><li><span aria-hidden="true">💡</span><p data-i18n="lootBisText">Renseigne-toi sur tes BiS avant de choisir tes réserves.</p></li><li><span aria-hidden="true">🛡️</span><p data-i18n="lootRelevantText">Une SR doit correspondre à ta classe et à ton rôle. Les officiers peuvent refuser une réserve incohérente.</p></li></ul></div>
+      </div>
+    </section>
+
+    <section id="communaute" class="section community-section" aria-labelledby="community-title">
+      <div class="container">
+        <div class="section-heading"><h2 id="community-title" data-i18n="communityTitle">🍻 La guilde, c’est aussi entre les raids.</h2><p data-i18n="communityIntro">Notre QG, c’est Discord. Passe dire bonjour, propose une sortie, donne un coup de main : le team building se fait aussi entre deux raids !</p></div>
+        <section class="leadership" aria-labelledby="leadership-title">
+          <h3 id="leadership-title" data-i18n="leadershipTitle">🏢 Le petit comité de direction</h3>
+          <p class="leadership-intro" data-i18n="leadershipIntro">Une question, une idée ou un souci ? Nos bureaux sont sur Discord.</p>
+          <div class="leaders-grid">
+            <article class="leader-card">
+              <img class="leader-avatar" src="assets/people/buzk.png" data-discord-id="107480887993589760" width="72" height="72" alt="" loading="lazy" referrerpolicy="no-referrer">
+              <div class="leader-info"><p class="leader-role" data-i18n="leaderBuzkRole">👑 Maître de guilde</p><h4>buzk</h4><a class="discord-profile" href="https://discord.com/users/107480887993589760" target="_blank" rel="noopener noreferrer" aria-label="Ouvrir le profil Discord de buzk" data-i18n-aria="buzkProfileLabel"><img class="discord-icon" src="assets/brands/discord-black.svg" width="20" height="15" alt=""><span>@buzk</span></a></div>
+            </article>
+            <article class="leader-card">
+              <span class="leader-avatar avatar-initial" aria-hidden="true">S</span>
+              <div class="leader-info"><p class="leader-role" data-i18n="leaderSyllouRole">⚔️ Officier principal</p><h4>Syllou</h4><button class="discord-profile copy-handle" type="button" data-discord-handle="hyllou" aria-label="Copier le pseudo Discord de Syllou : hyllou" data-i18n-aria="syllouCopyLabel" hidden><img class="discord-icon" src="assets/brands/discord-black.svg" width="20" height="15" alt=""><span>@hyllou</span></button></div>
+            </article>
+          </div>
+          <p class="copy-status" id="team-copy-status" role="status"></p>
+        </section>
+        <div class="community-grid"><div class="charter"><h3 data-i18n="charterTitle">Les bonnes habitudes 🤝</h3><ul class="charter-list"><li data-i18n="charterRespect">😌 Du respect, du calme et de la bienveillance.</li><li data-i18n="charterCharacter">🛠️ On s’occupe de son perso et de sa progression.</li><li data-i18n="charterAttendance">📅 On est assidu et on tient Raid-Helper à jour.</li><li data-i18n="charterCommunity">💬 On participe, on aide et on propose des activités.</li></ul><div class="channels"><div><span class="channel">#✈️-absences</span><span data-i18n="channelAbsences">Absences & retards</span></div><div><span class="channel">#🥘-métiers</span><span data-i18n="channelCrafting">Crafts & ressources</span></div></div></div>
+          <div class="ranks"><h3 data-i18n="ranksTitle">Qui fait quoi ?</h3><div class="rank-row"><span aria-hidden="true">👑</span><div><h4 data-i18n="rankOfficer">Officier</h4><p data-i18n="rankOfficerText">Le comité de direction : organisation et décisions pour la guilde.</p></div></div><div class="rank-row"><span aria-hidden="true">⭐</span><div><h4 data-i18n="rankVeteran">Vétéran</h4><p data-i18n="rankVeteranText">Un fidèle au poste, d’une extension à l’autre.</p></div></div><div class="rank-row"><span aria-hidden="true">⚔️</span><div><h4 data-i18n="rankMember">Membre</h4><p data-i18n="rankMemberText">Actif dans les raids et la vie de la guilde.</p></div></div><div class="rank-row"><span aria-hidden="true">🌱</span><div><h4 data-i18n="rankNew">Nouveau</h4><p data-i18n="rankNewText">Tout juste arrivé, ou encore peu actif. Bienvenue !</p></div></div></div>
+        </div>
+        <div class="discord-cta"><img class="cta-art" src="assets/art/crafting.png" width="452" height="284" alt="" loading="lazy"><div class="cta-copy"><h2 data-i18n="ctaTitle">Il reste une place à la taverne 🍺</h2><p data-i18n="ctaText">Viens dire bonjour sur Discord. La prochaine aventure commence peut-être ici !</p><a class="button button-discord" href="https://discord.gg/fHhJxuQCfZ" target="_blank" rel="noopener noreferrer"><img class="discord-icon" src="assets/brands/discord-white.svg" width="24" height="18" alt=""><span data-i18n="joinDiscord">Rejoindre le Discord</span></a></div></div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="container"><div class="footer-bottom"><p>© <span id="year">2026</span> Corporate. <span data-i18n="footerCommunity">Une guilde World of Warcraft.</span></p><p data-i18n="footerLegal">Site de fans, non affilié à Blizzard Entertainment. World of Warcraft est une marque de Blizzard Entertainment.</p></div></div></footer>
+  <noscript><div class="noscript-note">La version française est disponible sans JavaScript. Activez JavaScript pour passer en anglais et enregistrer votre checklist. / Enable JavaScript for English and the saved checklist.</div></noscript>
+</body>
+</html>
